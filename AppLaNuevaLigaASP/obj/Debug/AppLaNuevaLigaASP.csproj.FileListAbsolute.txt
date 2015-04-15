@@ -1,0 +1,5 @@
+C:\Users\Jose\documents\visual studio 2012\Projects\AppLaNuevaLigaASP\AppLaNuevaLigaASP\bin\AppLaNuevaLigaASP.dll
+C:\Users\Jose\documents\visual studio 2012\Projects\AppLaNuevaLigaASP\AppLaNuevaLigaASP\bin\AppLaNuevaLigaASP.pdb
+C:\Users\Jose\documents\visual studio 2012\Projects\AppLaNuevaLigaASP\AppLaNuevaLigaASP\obj\Debug\AppLaNuevaLigaASP.csprojResolveAssemblyReference.cache
+C:\Users\Jose\documents\visual studio 2012\Projects\AppLaNuevaLigaASP\AppLaNuevaLigaASP\obj\Debug\AppLaNuevaLigaASP.dll
+C:\Users\Jose\documents\visual studio 2012\Projects\AppLaNuevaLigaASP\AppLaNuevaLigaASP\obj\Debug\AppLaNuevaLigaASP.pdb
