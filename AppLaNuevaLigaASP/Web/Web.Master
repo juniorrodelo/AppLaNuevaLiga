@@ -26,16 +26,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="Default.aspx">AppServicioEntregaPaquetes</a>
+                <a class="navbar-brand" href="Default.aspx">APP la Nueva Liga</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="CreatePackage.aspx">Send Packages</a>
+                        <a href="CreatePersonaje.aspx">Create Personaje</a>
                     </li>
                     <li>
-                        <a href="CreatePerson.aspx">Clients</a>
+                        <a href="CreatePerson.aspx"></a>
                     </li>
                     <li>
                         <a href="#">Contact</a>

@@ -10,7 +10,7 @@
         </div>
         <!-- panel preview -->
         <div class="col-sm-5">
-            <h4>Create person:</h4>
+            <h4>Create personaje:</h4>
             <div class="panel panel-default">
                 <div class="panel-body form-horizontal payment-form">
 
@@ -26,9 +26,9 @@
                           
                         <asp:Label CssClass="col-sm-3 control-label" ID="Label10" runat="server" Text="Genero"></asp:Label>
                         <div class="col-sm-9">
-                        <asp:DropDownList onChange="javascript:mostrar(this.value);" CssClass="form-control" ID="DropDownList1" runat="server">
-                            <asp:ListItem Value="m">Masculino</asp:ListItem>
-                            <asp:ListItem Value="f">Femenino</asp:ListItem>
+                        <asp:DropDownList CssClass="form-control" ID="dlGenero" runat="server">
+                            <asp:ListItem Value="M">Masculino</asp:ListItem>
+                            <asp:ListItem Value="F">Femenino</asp:ListItem>
                         </asp:DropDownList>
                         </div>
                     </div>
@@ -36,10 +36,10 @@
                     <div class="form-group">
                     <asp:Label CssClass="col-sm-3 control-label" ID="Label14" runat="server" Text="Liga"></asp:Label>
                         <div class="col-sm-9">
-                            <asp:RadioButtonList ID="rbtLstRating" runat="server" 
+                            <asp:RadioButtonList ID="rbLiga" runat="server" 
                                 RepeatDirection="Horizontal" RepeatLayout="Table">
-                                <asp:ListItem Text="Liga Master" Value="Excellent"></asp:ListItem>
-                                <asp:ListItem Text="Liga Local" Value="Very Good"></asp:ListItem>
+                                <asp:ListItem Text="Liga Master" Value="Master"></asp:ListItem>
+                                <asp:ListItem Text="Liga Local" Value="Local"></asp:ListItem>
                             </asp:RadioButtonList>   
                         </div>         
                     </div>
@@ -55,22 +55,29 @@
                           
                         <asp:Label CssClass="col-sm-3 control-label" ID="Label11" runat="server" Text="Clase"></asp:Label>
                         <div class="col-sm-9">
-                        <asp:DropDownList onChange="javascript:mostrar(this.value);" CssClass="form-control" ID="DropDownList2" runat="server">
-                            <asp:ListItem Value="1">Humano</asp:ListItem>
-                            <asp:ListItem Value="2">Super Humano</asp:ListItem>
-                            <asp:ListItem Value="3">Aliens</asp:ListItem>
-                            <asp:ListItem Value="4">Artificiales</asp:ListItem>
+                        <asp:DropDownList onChange="javascript:mostrar(this.value);" CssClass="form-control" ID="TypePersonaje" runat="server">
+                            <asp:ListItem Value="humano">Humano</asp:ListItem>
+                            <asp:ListItem Value="shumano">Super Humano</asp:ListItem>
+                            <asp:ListItem Value="aliens">Aliens</asp:ListItem>
+                            <asp:ListItem Value="artificiales">Artificiales</asp:ListItem>
                         </asp:DropDownList>
                         </div>
                     </div> 
 
+                    <div id="Div1" style="display: none;" class="form-group">                        
+                        <asp:Label CssClass="col-sm-3 control-label" ID="Label4" runat="server" Text="Version"></asp:Label>
+                        <div class="col-sm-9">
+                            <asp:TextBox CssClass="form-control" ID="tbVersion" runat="server"></asp:TextBox>
+                        </div>
+                    </div>
+
                     <div class="form-group">
                     <asp:Label CssClass="col-sm-3 control-label" ID="Label15" runat="server" Text="Armas"></asp:Label>
                         <div class="col-sm-9">
-                        <asp:CheckBox ID="CheckBox9" runat="server" Text="Catana" /> <br />
-                        <asp:CheckBox id="checkbox10" runat="server" AutoPostBack="True" Text="AK47"/> <br />
-                        <asp:CheckBox ID="CheckBox11" runat="server" Text="Manun 40" /> <br />
-                        <asp:CheckBox ID="CheckBox12" runat="server" Text="Ninfa" />
+                        <asp:CheckBox ID="chCatana" runat="server" Text="Catana" /> <br />
+                        <asp:CheckBox ID="chAk47" runat="server" AutoPostBack="True" Text="AK47"/> <br />
+                        <asp:CheckBox ID="chManun" runat="server" Text="Manun 40" /> <br />
+                        <asp:CheckBox ID="chEspada" runat="server" Text="Espada" />
                         </div>
                     </div>
 
@@ -96,7 +103,7 @@
                         </div>
 
 
-                    <div class="form-group">
+                 <!--   <div class="form-group">
                           
                         <asp:Label CssClass="col-sm-3 control-label" ID="Label2" runat="server" Text="Shipping type"></asp:Label>
                         <div class="col-sm-9">
@@ -142,7 +149,7 @@
                         <div class="col-sm-9">
                             <asp:TextBox CssClass="form-control" ID="tbCosG" runat="server"></asp:TextBox>
                         </div>
-                    </div>
+                    </div>-->
 
                    
                     <div class="form-group">
@@ -161,21 +168,19 @@
 
 
        
+    <div>
+        <br />
 
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="ObjectDataSource1">
+            <Columns>
+                <asp:BoundField DataField="Nombre" HeaderText="Nombre" SortExpression="Nombre" />
+                <asp:BoundField DataField="Genero" HeaderText="Genero" SortExpression="Genero" />
+            </Columns>
+        </asp:GridView>
+        <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="getPersonaje" TypeName="AppLaNuevaLigaASP.Datos.PersonajesRepositories"></asp:ObjectDataSource>
 
+    </div>
 
-<asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="ObjectDataSource1">
-    <Columns>
-        <asp:BoundField DataField="Nacionalidad" HeaderText="Nacionalidad" SortExpression="Nacionalidad" />
-        <asp:BoundField DataField="Enemigos" HeaderText="Enemigos" ReadOnly="True" SortExpression="Enemigos" />
-        <asp:BoundField DataField="Caracteristicas" HeaderText="Caracteristicas" ReadOnly="True" SortExpression="Caracteristicas" />
-        <asp:BoundField DataField="Nombre" HeaderText="Nombre" SortExpression="Nombre" />
-        <asp:BoundField DataField="Genero" HeaderText="Genero" SortExpression="Genero" />
-    </Columns>
-    </asp:GridView>
-
-
-    <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="getPersonaje" TypeName="AppLaNuevaLigaASP.Datos.HumanosRepositories"></asp:ObjectDataSource>
 
 
 </asp:Content>

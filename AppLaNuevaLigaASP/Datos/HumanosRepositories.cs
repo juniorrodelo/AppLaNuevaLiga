@@ -8,10 +8,17 @@ namespace AppLaNuevaLigaASP.Datos
 {
     public class HumanosRepositories
     {
+        private static List<Humanos> lista = new List<Humanos>();
+
+        public HumanosRepositories()
+        {
+
+        }
+
         public IEnumerable<Humanos> getPersonaje()
         {
-            List<Humanos> lista = new List<Humanos>();
-
+            
+            /*
             //Creando los Personajes
             Humanos batman = new Humanos("Batman", 'M', "USA");
             Humanos wason = new Humanos("Wasson", 'M', "USA");
@@ -50,9 +57,15 @@ namespace AppLaNuevaLigaASP.Datos
 
             //Insertando en la Lista
             lista.Add(batman);
-            lista.Add(wason);
+            lista.Add(wason);*/
 
             return lista;
         }
+        
+        public void addPersonaje(Humanos p)
+        {
+            lista.Add(p);
+        }
     }
+
 }

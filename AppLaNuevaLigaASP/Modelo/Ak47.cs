@@ -5,17 +5,16 @@ using System.Web;
 
 namespace AppLaNuevaLigaASP.Modelo
 {
-    public class Espada : DecoratorCaract
+    public class Ak47 : DecoratorCaract
     {
-
-        public Espada(Caracterizacion c)
+        public Ak47(Caracterizacion c)
         {
             this.caracteristica = c;
         }
 
         public override string descripcion()
         {
-            return caracteristica.descripcion() + "Espada del Exilio 23\n , ";
+            return caracteristica.descripcion() + "Ak47 de largo alcance. , ";
         }
     }
 }

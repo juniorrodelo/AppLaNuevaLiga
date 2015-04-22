@@ -40,13 +40,13 @@ namespace AppLaNuevaLigaASP.Web {
         protected global::System.Web.UI.WebControls.Label Label10;
         
         /// <summary>
-        /// Control DropDownList1.
+        /// Control dlGenero.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.DropDownList dlGenero;
         
         /// <summary>
         /// Control Label14.
@@ -58,13 +58,13 @@ namespace AppLaNuevaLigaASP.Web {
         protected global::System.Web.UI.WebControls.Label Label14;
         
         /// <summary>
-        /// Control rbtLstRating.
+        /// Control rbLiga.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList rbtLstRating;
+        protected global::System.Web.UI.WebControls.RadioButtonList rbLiga;
         
         /// <summary>
         /// Control Label12.
@@ -94,13 +94,31 @@ namespace AppLaNuevaLigaASP.Web {
         protected global::System.Web.UI.WebControls.Label Label11;
         
         /// <summary>
-        /// Control DropDownList2.
+        /// Control TypePersonaje.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
+        protected global::System.Web.UI.WebControls.DropDownList TypePersonaje;
+        
+        /// <summary>
+        /// Control Label4.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label4;
+        
+        /// <summary>
+        /// Control tbVersion.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbVersion;
         
         /// <summary>
         /// Control Label15.
@@ -112,40 +130,40 @@ namespace AppLaNuevaLigaASP.Web {
         protected global::System.Web.UI.WebControls.Label Label15;
         
         /// <summary>
-        /// Control CheckBox9.
+        /// Control chCatana.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox9;
+        protected global::System.Web.UI.WebControls.CheckBox chCatana;
         
         /// <summary>
-        /// Control checkbox10.
+        /// Control chAk47.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox checkbox10;
+        protected global::System.Web.UI.WebControls.CheckBox chAk47;
         
         /// <summary>
-        /// Control CheckBox11.
+        /// Control chManun.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox11;
+        protected global::System.Web.UI.WebControls.CheckBox chManun;
         
         /// <summary>
-        /// Control CheckBox12.
+        /// Control chEspada.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox12;
+        protected global::System.Web.UI.WebControls.CheckBox chEspada;
         
         /// <summary>
         /// Control Label13.

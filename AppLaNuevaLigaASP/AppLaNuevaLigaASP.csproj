@@ -62,10 +62,13 @@
   <ItemGroup>
     <Compile Include="Datos\HumanosRepositories.cs" />
     <Compile Include="Datos\PersonajesRepositories.cs" />
+    <Compile Include="Modelo\Ak47.cs" />
     <Compile Include="Modelo\Aliens.cs" />
+    <Compile Include="Modelo\ArmaManun.cs" />
     <Compile Include="Modelo\Armas.cs" />
     <Compile Include="Modelo\Artificiales.cs" />
     <Compile Include="Modelo\Caracterizacion.cs" />
+    <Compile Include="Modelo\Catana.cs" />
     <Compile Include="Modelo\DecoratorCaract.cs" />
     <Compile Include="Modelo\Espada.cs" />
     <Compile Include="Modelo\Habilidades.cs" />
@@ -75,7 +78,6 @@
     <Compile Include="Modelo\LanzaLlama.cs" />
     <Compile Include="Modelo\Personajes.cs" />
     <Compile Include="Modelo\Personalidad.cs" />
-    <Compile Include="Modelo\Pistola.cs" />
     <Compile Include="Modelo\Poderes.cs" />
     <Compile Include="Modelo\SuperHumanos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
